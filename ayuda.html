@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - Búsqueda Binaria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1875E8;
+        }
+        h2 {
+            color: #1354A5;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .code {
+            background: #e8e8e8;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            text-align: left;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1875E8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #1354A5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Búsqueda Binaria</h1>
+        <p>La búsqueda binaria es un algoritmo eficiente para encontrar un número en una lista ordenada. Se basa en dividir la lista en mitades hasta encontrar el número deseado.</p>
+
+        <h2>🧠 ¿Cómo funciona?</h2>
+        <p>Si el número buscado es menor que el número del medio, descartamos la mitad superior. Si es mayor, descartamos la mitad inferior. Repetimos hasta encontrar el número.</p>
+
+        <h2>📌 Ejemplo paso a paso:</h2>
+        <p>Supongamos que el número secreto está entre <b>1 y 100</b> y queremos encontrarlo con la búsqueda binaria.</p>
+        
+        <p>Ejemplo con el número secreto = <b>39</b>:</p>
+        <div class="code">
+            Intento 1: 50 (es mayor, descartamos 50-100)<br>
+            Intento 2: 25 (es menor, descartamos 1-25)<br>
+            Intento 3: 37 (es menor, descartamos 1-37)<br>
+            Intento 4: 43 (es mayor, descartamos 43-50)<br>
+            Intento 5: 39 🎯 (¡Encontrado!)
+        </div>
+
+        <h2>🚀 Peor caso y eficiencia</h2>
+        <p>En el peor de los casos, la cantidad máxima de intentos para encontrar el número secreto entre 1 y 100 es:</p>
+        <div class="code">log₂(100) ≈ 7 intentos</div>
+        <p>Esto es mucho más rápido que probar cada número uno por uno.</p>
+
+        <h2>🔗 Más información:</h2>
+        <a href="https://es.wikipedia.org/wiki/B%C3%BAsqueda_binaria" target="_blank" class="button">Leer más en Wikipedia</a>
+
+        <br><br>
+        <a href="index.html" class="button">Volver al Juego</a>
+    </div>
+
+</body>
+</html>
