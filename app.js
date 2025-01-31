@@ -52,7 +52,7 @@ function generarNumeroAleatorio(){
 }
 
 function condicionesIniciales(){
-    asignarTextoElemento('h1', 'Juego número secreto !!!!!!!!' );
+    asignarTextoElemento('h1', 'Juego número secreto Ana Paula :-)' );
     asignarTextoElemento('p', `Introduce un número del 1 al ${numeroMaximo} !!!`);
     numeroSecreto = generarNumeroAleatorio();
     intentos = 1;
